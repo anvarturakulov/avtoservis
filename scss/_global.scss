@@ -17,18 +17,18 @@ body {
 }
 
 body{
-    // font-family: 'Roboto Condensed', sans-serif;
-    // font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 16px;
-    // line-height: 27px;
-    // color: $text;
-   
+    line-height: 24px;
+    color: $text;
+    background-color: $bg;
 }
 
 a{
     display: inline-block;
     text-decoration: none;
-    // color: $text;
+    color: $text;
 }
 
 ul,
@@ -39,7 +39,7 @@ li{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 15px;
 }
