@@ -206,7 +206,7 @@
     @include ibg;
     min-height: 500px;
     position: relative;
-    margin-bottom: 140px;
+    margin-bottom: 100px;
     &__inner{
         position: absolute;
         top: 30%;
@@ -464,8 +464,8 @@
 
 // start review 
 .review{
-    margin-top: 840px;
-    margin-bottom: 200px;
+    margin-top: 750px;
+    margin-bottom: 100px;
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -512,6 +512,85 @@
 
 
 //end review
+
+// start progress
+
+.progress{
+    min-height: 580px;
+    @include ibg;
+
+    &__inner{
+        position: relative;
+        padding-top: 140px;
+    }
+    &__top-img{
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: -100px;
+        width: 500px;
+        height: 315px;
+        @include ibg;             
+        border-radius: 20px;
+    }
+
+    &__title{
+        color: #fff;
+        font-size: 36px;
+        line-height: 60px;
+        font-weight: 900;
+        margin-bottom: 125px;
+        background-color: $red;
+        display: inline-block;
+        padding: 15px;
+        span{
+            background-color: #fff;
+            color: $red;
+        }
+    }
+
+    
+    &__box{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        display: flex;
+        background-color: $red;
+        &-img{
+            margin: 15px 3px 10px 3px;
+            width: 76px;
+            height: 76px;
+            @include ibg;
+        }
+    }
+    &__info{
+        background-color: #fff;
+        max-width: 170px;
+        padding: 10px 10px;
+        &-count{
+            font-size: 36px;
+            line-height: 42px;
+            font-weight: 900;
+            color: $red;
+        }
+        &-text{
+            font-size: 16px;
+            line-height: 24px;
+            color: $blue;
+        }
+    }
+}
+
+.img_tyre{
+    width: 72px;
+    height: 61px;
+    margin-left: 10px;
+    margin-top: 22px;
+    margin-right: 10px;
+
+}
+// end start
 
 //End
 
