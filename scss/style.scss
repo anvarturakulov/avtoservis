@@ -229,6 +229,45 @@
 }
 //end video
 
+// start services   
+
+.services{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 110px;
+    }
+    &__item{
+        text-align: center;
+        max-width: 320px;
+        width: 100%;
+        background-color: #fff;
+        margin-top: 25px;
+        padding: 50px 20px;
+        &-img{
+          width: 63px;
+          height: 63px;
+          @include ibg;
+          margin: 0px auto;
+        }
+        &-title{
+            font-size: 19px;
+            font-weight: 900;
+            line-height: 26px;
+            margin-bottom: 25px;
+            color: $blue;
+            margin-top: 15px;
+        }
+
+    }
+}
+.shadow{
+    box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2), 0px 8px 16px rgba(38, 38, 38, 0.24);
+}
+
+// end services
+
 //End
 
 
