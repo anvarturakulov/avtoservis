@@ -13,6 +13,7 @@
     <header class="header" style="background-image: url(images/bg/header_bg-ver2.jpg);">
         <div class="container">
             <div class="header__inner">
+                
                 <div class="header__inf">
                     <div class="header__timebox icon-clock-o">
                         <div class="header__inf-title">ВРЕМЯ РАБОТЫ</div>
@@ -30,12 +31,12 @@
                 <div class="header__menu-box">
                     <div class="menu">
                         <ul>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Преимущества</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Отзывы</a></li>
-                            <li><a href="#">Галарея</a></li>
-                            <li><a href="#">Достижения</a></li>
+                            <li><a class="scrollto" href="#services">Услуги</a></li>
+                            <li><a class="scrollto" href="#advantages">Преимущества</a></li>
+                            <li><a class="scrollto" href="#about">О нас</a></li>
+                            <li><a class="scrollto" href="#review">Отзывы</a></li>
+                            <li><a class="scrollto" href="#galary">Галарея</a></li>
+                            <li><a class="scrollto" href="#progress">Достижения</a></li>
                         </ul>
                     </div>
                 </div>
@@ -53,7 +54,7 @@
         </div>
     </header>
     
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__inner">
             <div class="title">Кто мы?</div>
             <div class="about__text">Краткая информация и история нашего технического центра. Как мы работаем. Каков у нас персонал. Какие оборудования используем в ремонте. Каков ассортимент нашего магазина в техническом центре. Краткая информация и история нашего технического центра. Как мы работаем. Каков у нас персонал. Какие оборудования используем в ремонте. Каков ассортимент нашего магазина в техническом центре.</div>
@@ -64,7 +65,7 @@
     </section>
 
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <div class="title">Наши преимущества</div>
             <div class="advantages__inner">
@@ -102,7 +103,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="title">Наши основные услуги</div>
             <div class="services__inner">
@@ -167,7 +168,7 @@
         </div>
     </section>
 
-    <section class="galary">
+    <section class="galary" id="galary">
         <div class="galary__inner">
             <div class="title">Галарея</div>
             <div class="galary__box">
@@ -187,7 +188,7 @@
         </div>
     </section>
 
-    <section class="review">
+    <section class="review" id="review">
         <div class="container">
             <div class="review__inner">
                 <div class="review__titlebox">
@@ -229,7 +230,7 @@
         </div>
     </section>
 
-    <section class="progress" style="background-image: url(images/bg/progress-bg.jpg);">
+    <section class="progress" id="progress" style="background-image: url(images/bg/progress-bg.jpg);">
         <div class="container">
             <div class="progress__inner">
                 <div class="progress__title">Наши дости<span>жения</span> </div>
@@ -272,6 +273,66 @@
             </div>
         </div>
     </section>
+    <section class="appointment__box">
+        <div class="container">
+            <div class="appointment__inner">
+                <div class="title">Записаться на ремонт</div>
+                <div class="appointment__box-link">
+                    <a class="link__btn" href="#">Записаться на ремонт</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="logo__box">
+                    <div class="logo">
+                        <div class="logo-img" style="background-image: url(images/logo.png);"></div>
+                        <div class="logo-text">АВТОСЕРВИС</div>
+                    </div>
+                    <div class="logo__box-text">Главные принципа нашего технического сервиса</div>
+                    <div class="logo__box-links">
+                        <a class="footer__link icon-facebook" href="#"></a>
+                        <a class="footer__link icon-twitter" href="#"></a>
+                        <a class="footer__link icon-instagram" href="#"></a>
+                        <a class="footer__link icon-youtube" href="#"></a>
+                    </div>
+                </div>
+                <div class="footer__menu-box">
+                    <div class="footer__title">Меню</div>
+                    <div class="menu__footer-box">
+                        <div class="menu__footer">
+                            <ul>
+                                <li><a class="scrollto" href="#services">Услуги</a></li>
+                                <li><a class="scrollto" href="#advantages">Преимущества</a></li>
+                                <li><a class="scrollto" href="#about">О нас</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="menu__footer">
+                            <ul>
+                                <li><a class="scrollto" href="#review">Отзывы</a></li>
+                                <li><a class="scrollto" href="#galary">Галарея</a></li>
+                                <li><a class="scrollto" href="#progress">Достижения</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__contact-box">
+                    <div class="footer__title">Контакты</div>
+                    <div class="footer__text icon-location2">г. Москва</div>
+                    <div class="footer__contact-phone">
+                        <a class="footer__contact-link" href="tel:+998905041055">+99890-504-10-55</a>    
+                    </div>
+                    <a class="footer__contact-link" href="mailto:anvarsam@mail.ru">anvarsam@mail.ru</a>
+                    <div class="footer__text">Пон-Суб: 7:00am-18:00am</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">Самарканд 2020г. [Автор верстки и установки на CMS Wordpress : Анвар Туракулов - www.turakulov.uz]</div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
