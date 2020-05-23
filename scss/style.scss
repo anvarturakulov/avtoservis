@@ -7,7 +7,6 @@
 .header{
     min-height: 800px;
     @include ibg;
-    
 }
 
 .header__inner{
@@ -149,14 +148,15 @@
     &__text{
         padding: 10px;
         margin-bottom: 20px;
+        text-align: justify;
     }
     margin-right: auto;
     &__img{
-        margin-left: 30px;
+        margin-left: 10px;
         img{
             border-radius: 20px;
-            max-width: 860px;
-            min-height: 460px;
+            max-width: 100%;
+            min-height: 100%;
         }
     }
 }
@@ -189,6 +189,7 @@
         &-info{
             max-width: 235px;
             margin-left: 10px;
+            text-align: justify;
         }
         &-title{
             font-size: 19px;
@@ -281,8 +282,8 @@
     }
     &__form{
         background-color: #fff;
-        max-width: 585px;                                                                                                                                                                                                                                                           
-        width: 100%;
+        max-width: 50%;                                                                                                                                                                                                                                                           
+        //width: 100%;
         form{
             padding: 70px 60px 30px;
             text-align: center;
@@ -304,7 +305,7 @@
                 //border: 1px solid $blue;
             }
             button{
-                margin-left: 280px;
+                margin-left: 200px;
                 margin-top: 20px;
                 font-size: 12px;
                 font-weight: 700;
@@ -358,16 +359,12 @@
 
 //start galary
 .galary{
-    position: relative;
     &__inner{
+        margin: 0 auto;
         max-width: 1100px;
         border-radius: 40px;
-        top: -100px;
-        left: 20%;
-        right: 20%;
-        position: absolute;
         background-color: #fff;
-        padding: 110px 120px 20px;
+        padding: 50px 120px 50px;
     }
 }
 
@@ -375,7 +372,7 @@
 .galary__item{
     margin: 0 auto;
     &-img{
-        width: 776px;
+        width: 100%;
         height: 517px;
         @include ibg;
     }
@@ -397,7 +394,7 @@
     height: 50px;
     width: 50px;
     top: 45%;
-    right: -40px;
+    right: -7%;
     cursor: pointer;
     outline: none;
     &::before{
@@ -420,7 +417,7 @@
     height: 50px;
     width: 50px;
     top: 45%;
-    left: -50px;
+    left: -5%;
     cursor: pointer;
     outline: none;
     &::before{
@@ -466,12 +463,13 @@
 
 // start review 
 .review{
-    margin-top: 750px;
+    margin-top: 50px;
     margin-bottom: 100px;
     &__inner{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-left: 10px;
     }
     &__titlebox{
         max-width: 300px;
@@ -522,18 +520,7 @@
     @include ibg;
 
     &__inner{
-        position: relative;
         padding-top: 140px;
-    }
-    &__top-img{
-        display: none;
-        position: absolute;
-        right: 0px;
-        top: -100px;
-        width: 500px;
-        height: 315px;
-        @include ibg;             
-        border-radius: 20px;
     }
 
     &__title{
@@ -555,9 +542,12 @@
     &__box{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        
     }
     &__item{
         display: flex;
+        
         background-color: $red;
         &-img{
             margin: 15px 3px 10px 3px;
@@ -595,36 +585,35 @@
 // end progress
 
 .appointment__box{
-    
-    position: relative;
+    margin: 50px auto;
     .appointment__inner{
-        padding: 40px 70px 50px 70px;
+        padding: 40px;
         max-width: 1200px;
         background-color: #fff;
-        left: 20%;
-        
-        top: -25px;  
-        position: absolute;
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         justify-content: space-around;
-        .title{
-            margin-right: 200px;
-        }
+        
+    }
+    .title{
+        margin-bottom: 0px;
     }
 }
 
+
 // footer start
 .footer{
-    margin-top: 200px;   
+    margin-top: 100px;   
     &__inner{
         display: flex; 
-        justify-content: space-between; 
+        justify-content: space-around;        
+        flex-wrap: wrap;
     }
 }
 .logo{
     display: flex;
-    align-items: center;
-    
+    //align-items: center;
     &-img{
         width: 50px;
         height: 50px;
@@ -644,98 +633,35 @@
     &-text{
         
         margin-top: 20px;
-        text-align: left;
+        text-align: center;
         font-size: 14px;
         line-height: 22px;
     }
     &-links{
+        
         display: flex;
         margin-top: 30px;
+        justify-content: space-between;
     }
 }
 
 .footer__link{
-    &::before{
-        color: $red;
-        font-size: 20px;
-    }
-    &+.footer__link{
-        margin-left: 20px;
-    }
+    color: $red;
+    font-size: 20px;
+    margin-left: 10px;
 }
 
 .footer__title{
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 22px;
     font-weight: 700;
-    text-transform: uppercase;
+    color: $blue;
+    text-align: center;
 }
 
-.menu__footer{
-    margin-top: 30px;
-    li{
-        & + li{
-            margin-top: 20px;
-        }
-    }
-    a{
-        font-size: 14px;
-        line-height: 22px;
-        
-    }
-    margin-right: 30px;
-    
-}
-
-.footer__text{
-    margin-top: 30px;
-    position: relative;
-    &::before{
-        font-size: 14px;
-        color: $red;
-        position: absolute;
-        left: -20px;
-        top: 3px;
-    }
-}
-
-.menu__footer-box{
+.ul__box{
     display: flex;
-    font-size: 14px;
-    line-height: 20px;
-}
-.footer__contact-phone{
-    &::before{
-        font-size: 14px;
-        color: $red;
-        position: absolute;
-        left: -20px;
-        top: 0px;
-        content:'\e942';
-        font-family: 'icomoon';
-    }
-}
-
-.footer__contact-link{
-    display: block;
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-.footer__text{
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: 20px;
-    &::before{
-        font-size: 14px;
-        color: $red;
-        position: absolute;
-        left: -20px;
-        top: 0px;
-        content:'\f017';
-        font-family: 'icomoon';
-    }
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .footer__bottom{
@@ -744,8 +670,49 @@
     padding: 10px 0px;
     color: $text;
     text-align: center;
+    font-size: 14px;
 }
+
+.footer{
+    font-size: 18px;
+    
+    li{
+        font-size: 20px;
+        width: 200px;
+        display: block;
+        a{
+            width: 100%;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+        margin-top: 20px;
+        position: relative;
+        &::before{
+            color: $red;
+            position: absolute;
+            left: -30px;
+        }
+    }
+    ul+ul{
+        margin-left: 0px;
+    }
+}
+
+.footer__contact-box{
+    margin-left: 40px;
+}
+
+.footer__menu-box{
+    margin-left: 40px;
+    
+}
+
 //end footer    
+
+.menu__btn{
+    display: none;
+}
 
 //End
 

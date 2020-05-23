@@ -5,6 +5,14 @@ $(function(){
       slidesToScroll: 1,
       dots: true,
       arrows:true,
+      responsive: [
+        {
+          breakpoint: 920,
+          settings: {
+            arrows:false
+          }
+        }
+      ]
     });
 
     $(".review__slider").slick({
@@ -12,6 +20,14 @@ $(function(){
       slidesToScroll: 1,
       dots: true,
       arrows:false,
+      responsive: [
+        {
+          breakpoint: 720,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
 
     jQuery("a.scrollto").click(function () {
@@ -21,6 +37,9 @@ $(function(){
       return false;
     });
     
+    $('.menu__btn').on('click',function(){
+      $('.menu').slideToggle();
+    });
 });
 
 
